@@ -1,4 +1,4 @@
-<h1>Add Two Numbers</h1>
+<h2>Add Two Numbers</h2>
 
 <b> Level: Medium </b>
 
