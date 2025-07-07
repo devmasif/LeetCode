@@ -21,6 +21,9 @@ Output: 5
 Explanation: The last word is "World" with length 5.
 </pre>
 
+
+
+
 <b>Example 2:</b>  
 <pre>
 Input: s = "   fly me   to   the moon  "
