@@ -2,6 +2,13 @@
 
 <h3><b>Level: Easy</b></h3>
 
+<h3>🔗 Problem Link:</h3>
+<p>
+  <a href="https://leetcode.com/problems/valid-parentheses/" target="_blank">
+    https://leetcode.com/problems/valid-parentheses/
+  </a>
+</p>
+
 ---
 
 <h3>📝 Description:</h3>

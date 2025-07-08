@@ -2,7 +2,15 @@
 
 <h3>Level: Easy</h3>
 
+<h3>🔗 Problem Link:</h3>
+<p>
+  <a href="https://leetcode.com/problems/contains-duplicate-ii/" target="_blank">
+    https://leetcode.com/problems/contains-duplicate-ii/
+  </a>
+</p>
+
 <hr>
+
 
 <h3>📝 Description:</h3>
 <p>
