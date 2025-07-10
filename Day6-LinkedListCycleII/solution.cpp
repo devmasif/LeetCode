@@ -6,26 +6,32 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {
+class Solution
+{
 public:
-    ListNode *detectCycle(ListNode *head) {
+    ListNode *detectCycle(ListNode *head)
+    {
         bool flag = false;
-        ListNode* fast = head;
-        ListNode* slow = head;
+        ListNode *fast = head;
+        ListNode *slow = head;
 
-        while( fast != nullptr && fast->next != nullptr ){
+        while (fast != nullptr && fast->next != nullptr)
+        {
             slow = slow->next;
             fast = fast->next->next;
 
-            if(fast == slow){
-                flag = true; 
+            if (fast == slow)
+            {
+                flag = true;
                 break;
             }
         }
 
-        if(flag){
+        if (flag)
+        {
             slow = head;
-            while(slow!=fast){
+            while (slow != fast)
+            {
                 fast = fast->next;
                 slow = slow->next;
             }
@@ -33,7 +39,6 @@ public:
             return fast;
         }
 
-    
-    return nullptr;    
+        return nullptr;
     }
 };
