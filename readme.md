@@ -18,6 +18,6 @@ I use this repo to improve my understanding of **Data Structures**, **Algorithms
 - Python
 
 ## 📌 Purpose
-- Practice DSA for coding interviews
+- Practice Problem Solving.
 - Track personal progress
 - Learn clean and optimal solutions
