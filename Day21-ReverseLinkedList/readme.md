@@ -1,43 +1,56 @@
-<h2>Reverse Linked List</h2>
+<h2>🧩 Reverse Linked List (LeetCode #206)</h2>  
+<h3>Level: Easy</h3>  
 
-<h3>📝 Description</h3>
-<p>Given the head of a singly linked list, reverse the list, and return the reversed list.</p>
+<h3>🔗 Problem Link:</h3>  
+<p>  
+<a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank">https://leetcode.com/problems/reverse-linked-list/</a>  
+</p>  
 
-<h3>📁 Examples</h3>
+---
 
-<b>Example 1:</b><br>
-Input: <code>head = [1,2,3,4,5]</code><br>
-Output: <code>[5,4,3,2,1]</code><br><br>
+<h3>📝 Description:</h3>  
+<p>  
+Given the head of a singly linked list, reverse the list, and return the reversed list.  
+</p>  
 
-<b>Example 2:</b><br>
-Input: <code>head = [1,2]</code><br>
-Output: <code>[2,1]</code><br><br>
+---
 
-<b>Example 3:</b><br>
-Input: <code>head = []</code><br>
-Output: <code>[]</code>
+<h3>📌 Examples:</h3>  
 
-<h3>🧠 Logic</h3>
-<p>
-To reverse a singly linked list, we iterate through the list while maintaining three pointers:
-<ul>
-<li><b>curr</b> - the current node</li>
-<li><b>prev</b> - the previous node, initialized to <code>nullptr</code></li>
-<li><b>next</b> - temporarily stores <code>curr->next</code> before reversing the link</li>
-</ul>
-At each step, we:
-<ol>
-<li>Save <code>curr->next</code> to <code>next</code></li>
-<li>Reverse the current node's pointer: <code>curr->next = prev</code></li>
-<li>Move <code>prev</code> to <code>curr</code></li>
-<li>Move <code>curr</code> to <code>next</code></li>
-</ol>
-This continues until the end of the list is reached. The new head will be the last node visited, now pointed to by <code>prev</code>.
-</p>
+<b>Example 1:</b>  
+<pre>Input: head = [1,2,3,4,5]  
+Output: [5,4,3,2,1]</pre>  
 
-<h3>🧠 Demonstrated Skills</h3>
-<ul>
-  <li>Pointer manipulation</li>
-  <li>In-place linked list reversal</li>
-  <li>Edge case handling for empty or single-node lists</li>
-</ul>
+<b>Example 2:</b>  
+<pre>Input: head = [1,2]  
+Output: [2,1]</pre>  
+
+<b>Example 3:</b>  
+<pre>Input: head = []  
+Output: []</pre>  
+
+---
+
+<h3>🧠 Logic:</h3>  
+<ul>  
+<li>Initialize <code>prev</code> as <code>nullptr</code> and <code>curr</code> as the head of the list.</li>  
+<li>Iterate through the list while <code>curr</code> is not <code>nullptr</code>:</li>  
+<ul>  
+  <li>Store <code>curr->next</code> in a temporary variable <code>next</code>.</li>  
+  <li>Reverse the current node’s link by setting <code>curr->next = prev</code>.</li>  
+  <li>Move <code>prev</code> to <code>curr</code>.</li>  
+  <li>Advance <code>curr</code> to <code>next</code>.</li>  
+</ul>  
+<li>Return <code>prev</code> as the new head of the reversed list.</li>  
+</ul>  
+
+---
+
+<h3>✅ Demonstrated Skills:</h3>  
+<ul>  
+<li>Pointer manipulation</li>  
+<li>In-place linked list reversal</li>  
+<li>Handling edge cases (e.g., empty or single-node lists)</li>  
+</ul>  
+
+---
